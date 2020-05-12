@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: app01rdtechie 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: app01rdtechie 
+    spec:
+      containers:
+        - name: app01rdtechie 
+          image: bschubacr.azurecr.io/app01rdtechie
+          ports:
+          - containerPort: 8080
