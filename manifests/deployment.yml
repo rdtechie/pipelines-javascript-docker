@@ -6,7 +6,8 @@ metadata:
     app: javaapp
 spec:
   selector:
-    app: javaapp
+    matchLabels:
+      app: javaapp
   replicas: 1
   template:
     metadata:
